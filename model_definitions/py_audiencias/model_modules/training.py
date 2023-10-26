@@ -12,7 +12,7 @@ def train(context: ModelContext, **kwargs):
 
     feature_names = context.dataset_info.feature_names
     target_name = context.dataset_info.target_names[0]
-    print(context.dataset_info.sql)
+    
     # read training dataset from Teradata and convert to pandas
     train_df = DataFrame.from_query(context.dataset_info.sql)
 
