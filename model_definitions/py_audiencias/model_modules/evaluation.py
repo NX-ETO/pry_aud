@@ -70,8 +70,7 @@ def evaluate(context: ModelContext, **kwargs):
 
     test_df = DataFrame.from_query(context.dataset_info.sql)
 
-    # Scaling the test set
-    print ("Loading scaler...")
+    print("Scoring")
     predictions = DecisionForestPredict(
         object=model,
         newdata=test_df,
