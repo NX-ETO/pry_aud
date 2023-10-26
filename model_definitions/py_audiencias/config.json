@@ -6,6 +6,11 @@
 		"mtry": 3,
 		"mtry_seed": 1,
 		"seed": 1,
-		"tree_type": "CLASSIFICATION"
+		"tree_type": "CLASSIFICATION",
+		"scale_method":"STD",
+		"miss_value":"KEEP",
+		"global_scale":"False",
+		"multiplier":"1",
+		"intercept":"0"
 	}
 }
