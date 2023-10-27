@@ -63,7 +63,8 @@ def evaluate(context: ModelContext, **kwargs):
     aoa_create_context()
 
     model = DataFrame(f"model_${context.model_version}")
-
+    print(f"model_${context.model_version}")
+    print(model)
     feature_names = context.dataset_info.feature_names
     target_name = context.dataset_info.target_names[0]
     entity_key = context.dataset_info.entity_key
